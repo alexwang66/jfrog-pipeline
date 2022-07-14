@@ -2,14 +2,12 @@ resources:
   - name: my_source_repo
     type: GitRepo
     configuration:
-      gitProvider: alexwang_github
+      gitProvider: github_alex
       path: alexwang66/jfrog-pipeline
       branches:
         include: main
       buildOn:
         commit:                true
-        pullRequestCreate:     true
-        releaseRequestCreate : true
  
 pipelines:     
     - name: pipeline_gitrepo_trigger
