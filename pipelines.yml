@@ -1,10 +1,9 @@
-- name: myFirstRepo
-  type: GitRepo
-  configuration:
-    # SCM integration where the repository is located
-    gitProvider: alexwang_github
-    # Repository path, including org name/repo name
-    path: alexwang66/jfrog-pipeline
-    branches:
-      # Specifies which branches will trigger dependent steps
-      include: master
+pipelines:
+  - name: java_pipeline
+    steps:
+      - name: step_1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: myFirstRepo
+        
