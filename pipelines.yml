@@ -6,4 +6,7 @@ pipelines:
         configuration:
           inputResources:
             - name: myFirstRepo
+            execution:
+        onExecute:
+           - echo '1'
         
