@@ -2,7 +2,7 @@ resources:
   - name: my_source_repo
     type: GitRepo
     configuration:
-      gitProvider: github_alex
+      gitProvider: alex_github
       path: alexwang66/jfrog-pipeline
       branches:
         include: main
